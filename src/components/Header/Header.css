@@ -1,0 +1,171 @@
+/* Styles généraux */
+.header {
+    background-color: white; /* Fond blanc */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Conteneur du logo */
+  .logo a {
+    color: #1b61ba; /* Bleu principal */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .logo a:hover {
+    color: #428eec; /* Bleu plus clair au survol */
+  }
+  
+  /* Liste de navigation */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrer les éléments */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  /* Liens de navigation */
+  .nav-link {
+    color: #282c34; /* Texte sombre */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #1b61ba; /* Bleu principal au survol */
+    background-color: rgba(27, 97, 186, 0.1); /* Fond légèrement transparent */
+  }
+  
+  /* Animation de soulignement au survol */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1b61ba;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Soulignement complet au survol */
+  }
+  
+  /* Alignement du logo et de la navigation */
+  nav {
+    display: flex;
+    justify-content: space-between; /* Logo à gauche, navigation à droite */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: none; /* Masquer par défaut */
+    }
+  
+    .nav-list.active {
+      display: flex; /* Afficher quand actif */
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .nav-link {
+      padding: 8px 0;
+    }
+  
+    /* Bouton pour le menu mobile */
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+      color: #1b61ba;
+    }
+  }
+
+  /* Styles pour l'image du logo */
+.logo-image {
+  height: 50px; /* Ajustez la hauteur selon vos besoins */
+  width: auto; /* Garde le ratio de l'image */
+}
+
+/* Si vous voulez centrer le logo verticalement */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Bouton du menu burger (masqué par défaut) */
+.menu-toggle {
+  display: none; /* Masqué sur desktop */
+  cursor: pointer;
+  font-size: 24px;
+  color: #1b61ba;
+  background: none;
+  border: none;
+}
+
+/* Afficher le bouton en version mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Afficher en mobile */
+  }
+
+  /* Masquer la liste de navigation par défaut en mobile */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Afficher la liste de navigation quand le menu est actif */
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+}

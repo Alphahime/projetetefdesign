@@ -1,0 +1,345 @@
+/* Bannière améliorée */
+body{
+  background-image: url(../../images/back2.avif);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section {
+  background: linear-gradient(135deg, #1b61ba, #428eec); /* Dégradé de fond */
+  color: white;
+  padding: 100px 0; /* Réduire le padding pour un meilleur équilibre */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem; /* Taille de police réduite pour s'adapter à la nouvelle disposition */
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Ombre pour le texte */
+}
+
+.hero-section h6 {
+  font-size: 1.25rem; /* Taille de police réduite */
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-in-out;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Ombre pour le texte */
+}
+
+.hero-section .custom-form {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-section .input-group {
+  max-width: 100%; /* Largeur maximale pour le champ de recherche */
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+  border-radius: 50px; /* Bords arrondis */
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Effet de flou */
+}
+
+.hero-section .input-group-text {
+  background-color: transparent;
+  border: none;
+  padding: 0 20px;
+}
+
+.hero-section .form-control {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px;
+}
+
+.hero-section .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-section .btn-primary {
+  background-color: #428eec;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 0 50px 50px 0; /* Bords arrondis à droite */
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #1b61ba;
+}
+
+/* Animation pour le texte */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem; /* Taille de police réduite pour les petits écrans */
+  }
+
+  .hero-section h6 {
+    font-size: 1rem; /* Taille de police réduite pour les petits écrans */
+  }
+
+  .hero-section .input-group {
+    border-radius: 25px; /* Bords moins arrondis pour les petits écrans */
+  }
+
+  .hero-section .btn-primary {
+    padding: 10px 20px; /* Bouton plus petit pour les petits écrans */
+  }
+}
+
+/* Section Services */
+.explore-section {
+  padding: 100px 0;
+}
+
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-tabs .nav-link {
+  color: #1b61ba;
+  border: 1px solid #1b61ba;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #1b61ba;
+  color: white;
+}
+
+.custom-block {
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.custom-block:hover {
+  transform: translateY(-10px);
+}
+
+.custom-block h5 {
+  color: #1b61ba;
+  font-size: 1.5rem;
+}
+
+/* Section Témoignages */
+.testimonial-section {
+  padding: 100px 0;
+}
+
+.testimonial-block {
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.testimonial-block p {
+  font-style: italic;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.testimonial-block h6 {
+  color: #1b61ba;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+/* Section Ils nous ont fait confiance */
+.trust-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.trust-section h2 {
+  margin-bottom: 50px;
+}
+
+.trust-section img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.trust-section img:hover {
+  filter: grayscale(0%);
+}
+
+/* Section À propos de nous */
+.about-section {
+  padding: 100px 0;
+  background-color: #f8f9fa; /* Couleur de fond légère */
+}
+
+.about-section h2 {
+  color: #1b61ba; /* Couleur du titre */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #555; /* Couleur du texte */
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-section .icon-lg {
+  font-size: 2.5rem; /* Taille des icônes */
+  margin-bottom: 10px;
+}
+
+.about-section h6 {
+  color: #1b61ba; /* Couleur des sous-titres */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-section .small {
+  font-size: 0.9rem; /* Taille du texte des slogans */
+  color: #777;
+}
+
+/* Effet de carte flip */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Effet de perspective */
+  width: 100%;
+  height: 200px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rotation de 180 degrés au survol */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Cache la face arrière */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #ffffff; /* Couleur de fond de la face avant */
+  color: #1b61ba;
+}
+
+.flip-card-back {
+  background-color: #1b61ba; /* Couleur de fond de la face arrière */
+  color: #ffffff;
+  transform: rotateY(180deg); /* Rotation initiale de la face arrière */
+}
+
+
+/* Section Contact */
+.contact-section {
+  padding: 100px 0;
+  background-color: #f8f9fa; /* Couleur de fond légère */
+}
+
+.contact-section h2 {
+  color: #1b61ba; /* Couleur du titre */
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #555; /* Couleur du texte */
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Conteneur de la carte */
+.map-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Informations de contact */
+.contact-info {
+  padding: 30px;
+}
+
+.contact-info h5 {
+  color: #1b61ba; /* Couleur des sous-titres */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #555; /* Couleur du texte */
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.contact-info a {
+  color: #1b61ba; /* Couleur des liens */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Effet de survol */
+}
+
+/* Icônes */
+.icon-lg {
+  font-size: 2rem; /* Taille des icônes */
+}
