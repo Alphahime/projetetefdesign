@@ -343,3 +343,29 @@ body{
 .icon-lg {
   font-size: 2rem; /* Taille des icônes */
 }
+
+/* Style de base pour le lien */
+.custom-block a {
+  text-decoration: none; /* Supprime le soulignement par défaut */
+  color: #1b61ba; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+  display: flex; /* Utilise Flexbox pour aligner les éléments */
+  align-items: center; /* Centre verticalement le texte et l'icône */
+  transition: color 0.3s ease; /* Animation fluide pour le changement de couleur */
+}
+
+/* Style au survol du lien */
+.custom-block a:hover {
+  color: #144a8f; /* Couleur plus foncée au survol */
+}
+
+/* Style pour l'icône de flèche */
+.custom-block a svg {
+  margin-left: 8px; /* Espace entre le texte et l'icône */
+  transition: transform 0.3s ease; /* Animation fluide pour l'icône */
+}
+
+/* Effet au survol : déplacer légèrement l'icône vers la droite */
+.custom-block a:hover svg {
+  transform: translateX(5px); /* Déplace l'icône de 5px vers la droite */
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 import { FaPaintBrush, FaChalkboardTeacher, FaCode, FaBullhorn, FaSearch } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './Accueil.css';
@@ -59,7 +61,7 @@ function Accueil() {
 
 
 
-      <section className="about-section section-padding">
+<section className="about-section section-padding" id="section_2">
       <div className="container">
         <div className="row align-items-center">
           {/* Image à gauche */}
@@ -143,7 +145,7 @@ function Accueil() {
     </section>
 
       {/* Section Services avec icônes */}
-      <section className="explore-section section-padding" id="section_2">
+      <section className="explore-section section-padding" id="section_3">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
@@ -199,7 +201,12 @@ function Accueil() {
                             <p className="mb-0">Création de visuels attractifs et uniques</p>
                           </div>
                         </div>
+                        <Link to="/infographie" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
+   
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
@@ -212,7 +219,12 @@ function Accueil() {
                             <p className="mb-0">Création d'éléments graphiques impactants</p>
                           </div>
                         </div>
+                        <Link to="/infographie" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
+   
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12">
@@ -225,9 +237,16 @@ function Accueil() {
                             <p className="mb-0">Des logos sur mesure pour votre marque</p>
                           </div>
                         </div>
+                        <Link to="/infographie" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
+
                     </div>
+   
                   </div>
+   
                 </div>
 
                 {/* Formation */}
@@ -243,9 +262,16 @@ function Accueil() {
                             <p className="mb-0">Apprenez avec des experts du domaine</p>
                           </div>
                         </div>
+                        <Link to="/formation" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
+
                     </div>
+ 
                   </div>
+   
                 </div>
 
                 {/* Développement Web */}
@@ -261,6 +287,11 @@ function Accueil() {
                             <p className="mb-0">Développement de sites performants et responsives</p>
                           </div>
                         </div>
+                        <Link to="/developpement-web" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
+              
                       </div>
                     </div>
 
@@ -274,6 +305,10 @@ function Accueil() {
                             <p className="mb-0">Applications web et mobiles sur mesure</p>
                           </div>
                         </div>
+                        <Link to="/developpement-web" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
                     </div>
                   </div>
@@ -292,6 +327,10 @@ function Accueil() {
                             <p className="mb-0">Stratégies digitales pour booster votre marque</p>
                           </div>
                         </div>
+                        <Link to="/marketing-digital" className="d-flex align-items-center mt-3">
+    <span className="me-2">Voir plus</span>
+    <FaArrowRight size={18} />
+  </Link>
                       </div>
                     </div>
                   </div>
@@ -315,21 +354,22 @@ function Accueil() {
             <div className="col-lg-4 col-md-6 col-12">
               <div className="testimonial-block bg-white shadow-lg">
                 <p>"Un service professionnel et des résultats impressionnants !"</p>
-                <h6>- Client A</h6>
+                <h6>- Pierre Tchoungui</h6>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-12">
               <div className="testimonial-block bg-white shadow-lg">
                 <p>"Leur équipe a su répondre à tous mes besoins."</p>
-                <h6>- Client B</h6>
+                <h6>- Marie Nguimfack </h6>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-12">
               <div className="testimonial-block bg-white shadow-lg">
                 <p>"Je recommande vivement ETET Design Website !"</p>
-                <h6>- Client C</h6>
+                <h6>- Jean-Baptiste Ekodeck
+                </h6>
               </div>
             </div>
           </div>
@@ -356,7 +396,7 @@ function Accueil() {
       </section>
 
 
-      <section className="contact-section section-padding">
+     <section className="contact-section section-padding" id="section_4">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
@@ -397,7 +437,7 @@ function Accueil() {
                 <div>
                   <h5>Téléphone</h5>
                   <p className="mb-0">
-                    <a href="tel:+33695744027" className="text-decoration-none">+(33) 6 95 74 40 27</a>
+                    {/* <a href="tel:+33695744027" className="text-decoration-none">+(33) 6 95 74 40 27</a> */}
                   </p>
                   <p className="mb-0">
                     <a href="tel:+33749911112" className="text-decoration-none">+(33) 7 49 91 11 12</a>

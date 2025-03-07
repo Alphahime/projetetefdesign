@@ -1,0 +1,101 @@
+/* Marketing Digital Page Styles */
+.marketing-digital-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+  }
+  
+  /* Header Styling */
+  .marketing-digital-header {
+    background-color: #1b61ba;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+  }
+  
+  .marketing-digital-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .marketing-digital-header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  /* Services Section */
+  .marketing-digital-services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    margin: 3rem;
+  }
+  
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Adjust to make four columns */
+  }
+  
+  .service-item h3 {
+    color: #1b61ba;
+    font-size: 1.5rem;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+
+  /* Responsive Styles for Mobile */
+@media (max-width: 1024px) {
+    .marketing-digital-services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-item {
+      width: 80%; /* Adjust width to fit better on tablets */
+      margin-bottom: 20px; /* Add some space between items */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* On smaller screens (mobile), make the service items stack vertically */
+    .service-item {
+      width: 100%; /* Make each item take full width */
+    }
+  
+    .marketing-digital-header h1 {
+      font-size: 2rem; /* Reduce header size */
+    }
+  
+    .marketing-digital-header p {
+      font-size: 1rem; /* Adjust the paragraph text size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .marketing-digital-header h1 {
+      font-size: 1.8rem; /* Reduce header size even further */
+    }
+  
+    .marketing-digital-header p {
+      font-size: 0.9rem; /* Adjust paragraph size */
+    }
+  
+    .service-item h3 {
+      font-size: 1.3rem; /* Reduce title size on very small screens */
+    }
+  
+    .service-item p {
+      font-size: 0.9rem; /* Adjust text size inside service items */
+    }
+  }
+  

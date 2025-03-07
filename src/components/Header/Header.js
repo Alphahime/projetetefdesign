@@ -10,6 +10,14 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Fermer le menu après le clic (pour les mobiles)
+  };
+
   return (
     <header className="header">
       <nav>
@@ -26,15 +34,40 @@ function Header() {
 
         {/* Liste de navigation avec une classe conditionnelle */}
         <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-          <li><Link to="/" className="nav-link" onClick={toggleMenu}>Accueil</Link></li>
-          <li><Link to="/a-propos" className="nav-link" onClick={toggleMenu}>À Propos</Link></li>
-          <li><Link to="/services" className="nav-link" onClick={toggleMenu}>Services</Link></li>
-          <li><Link to="/contact" className="nav-link" onClick={toggleMenu}>Contact</Link></li>
+          <li>
+            <button
+              className="nav-link"
+              onClick={() => scrollToSection('section_1')}
+            >
+              Accueil
+            </button>
+          </li>
+          <li>
+            <button
+              className="nav-link"
+              onClick={() => scrollToSection('section_2')}
+            >
+              À Propos
+            </button>
+          </li>
+          <li>
+            <button
+              className="nav-link"
+              onClick={() => scrollToSection('section_3')}
+            >
+              Services
+            </button>
+          </li>
+          <li>
+            <button
+              className="nav-link"
+              onClick={() => scrollToSection('section_4')}
+            >
+              Contact
+            </button>
+          </li>
         </ul>
-      
       </nav>
-
-   
     </header>
   );
 }
