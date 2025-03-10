@@ -220,7 +220,7 @@ body{
 }
 
 .about-section p {
-  color: #555; /* Couleur du texte */
+ 
   font-size: 1.1rem;
   line-height: 1.8;
 }
@@ -368,4 +368,46 @@ body{
 /* Effet au survol : déplacer légèrement l'icône vers la droite */
 .custom-block a:hover svg {
   transform: translateX(5px); /* Déplace l'icône de 5px vers la droite */
+}
+
+
+/* Section "Ils nous ont fait confiance" */
+.trust-section {
+  background-color: #f9f9f9; /* Couleur de fond de la section */
+  padding: 60px 0; /* Espacement interne */
+}
+
+.trust-section h2 {
+  font-size: 2rem; /* Taille du titre */
+  font-weight: bold; /* Gras */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 40px; /* Espacement en dessous du titre */
+}
+
+.trust-section .row.justify-content-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacement entre les logos */
+}
+
+.trust-section .col-lg-2.col-md-4.col-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Espacement interne des colonnes */
+}
+
+.trust-section img {
+  width: 100%; /* Largeur de l'image */
+  max-width: 150px; /* Largeur maximale de l'image */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  object-fit: contain; /* Assure que l'image s'adapte sans déformation */
+  filter: grayscale(100%); /* Optionnel : mettre les logos en noir et blanc */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Animation au survol */
+}
+
+.trust-section img:hover {
+  filter: grayscale(0%); /* Optionnel : couleur originale au survol */
+  transform: scale(1.1); /* Optionnel : zoom léger au survol */
 }

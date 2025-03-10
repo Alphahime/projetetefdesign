@@ -14,7 +14,11 @@ import formationImage from '../../images/service formation.jpg';
 import devwebImage from '../../images/service devweb.jpg';
 import aproposImage from '../../images/apropos image personne.jpg';
 // Importez le logo Africa For Good
-import logoAfricaForGood from '../../images/logoafricaforgood.png';
+import logomendres from "../../images/logomendres.jpg";
+import logowallyauto from "../../images/logowallyauto.jpg";
+import logoEtef from "../../images/logo-etef-5_0 (1) (1).avif";
+import ecopialogo from "../../images/ecopialogo.jpeg";
+import logoafricaforgood from "../../images/logoafricaforgood.png"; // Importez ce logo
 import bannerImage from "../../images/banner-image-etef.svg";
 
 function Accueil() {
@@ -376,24 +380,30 @@ function Accueil() {
         </div>
       </section>
 
-      {/* Section Ils nous ont fait confiance */}
-      <section className="trust-section section-padding">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h2 className="mb-4">Ils nous ont fait confiance</h2>
-            </div>
-          </div>
+ {/* Section Ils nous ont fait confiance */}
+<section className="trust-section section-padding">
+  <div className="container">
+    <div className="row">
+      <div className="col-12 text-center">
+        <h2 className="mb-4">Ils nous ont fait confiance</h2>
+      </div>
+    </div>
 
-          <div className="row justify-content-center">
-            {[...Array(5)].map((_, index) => (
-              <div className="col-lg-2 col-md-4 col-6" key={index}>
-                <img src={logoAfricaForGood} alt={`Logo Africa For Good ${index + 1}`} className="img-fluid" />
-              </div>
-            ))}
-          </div>
+    <div className="row justify-content-center">
+      {[
+        logomendres, // Utilisez la variable importée
+        logowallyauto, // Utilisez la variable importée
+        logoEtef, // Utilisez la variable importée
+        ecopialogo, // Utilisez la variable importée
+        logoafricaforgood // Utilisez la variable importée
+      ].map((logo, index) => (
+        <div className="col-lg-2 col-md-4 col-6" key={index}>
+          <img src={logo} alt={`Logo ${index + 1}`} className="img-fluid" />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
 
      <section className="contact-section section-padding" id="section_4">
@@ -437,10 +447,10 @@ function Accueil() {
                 <div>
                   <h5>Téléphone</h5>
                   <p className="mb-0">
-                    {/* <a href="tel:+33695744027" className="text-decoration-none">+(33) 6 95 74 40 27</a> */}
+                    <a href="tel:+33695744027" className="text-decoration-none">+(33) 6 95 74 40 27</a>
                   </p>
                   <p className="mb-0">
-                    <a href="tel:+33749911112" className="text-decoration-none">+(33) 7 49 91 11 12</a>
+                    {/* <a href="tel:+33749911112" className="text-decoration-none">+(33) 7 49 91 11 12</a> */}
                   </p>
                 </div>
               </div>
