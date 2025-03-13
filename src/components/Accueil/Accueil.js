@@ -25,7 +25,7 @@ function Accueil() {
   return (
     <div className="accueil">
       <Header />
-
+      <meta name="google-site-verification" content="s1bQ4tk6BTbj8CW6mkeLuqCvgDYY1wjemkPIjHcwVKQ" />
   
 {/* Section Bannière améliorée */}
 <section className="hero-section d-flex align-items-center" id="section_1">
