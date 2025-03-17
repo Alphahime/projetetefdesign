@@ -8,10 +8,10 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './Accueil.css';
 import { FaRocket, FaLightbulb, FaUsers } from 'react-icons/fa'; 
 // Importez les images des services
-import infographieImage from '../../images/services inforgraphie.jpg';
+import infographieImage from '../../images/concept-strategie-entreprise-dessine-main.png';
 import marketingImage from '../../images/service markting digital.jpg';
 import formationImage from '../../images/service formation.jpg';
-import devwebImage from '../../images/service devweb.jpg';
+import devwebImage from '../../images/illustration-equipe-developpement-web.png';
 import aproposImage from '../../images/apropos image personne.jpg';
 // Importez le logo Africa For Good
 import logomendres from "../../images/logomendres.jpg";
@@ -38,7 +38,7 @@ function Accueil() {
 
       {/* Colonne pour le texte et le champ de recherche */}
       <div className="col-lg-6 col-12 text-center text-lg-start">
-        <h1 className="text-white animate__animated animate__fadeInDown">Découvrez. Apprenez. Profitez.</h1>
+        <h1 className="text-white animate__animated animate__fadeInDown">Créez. Optimisez. Rentabilisez.</h1>
         <h6 className="text-white animate__animated animate__fadeInUp mb-4">Une plateforme pour les créatifs du monde entier</h6>
 
         {/* Champ de recherche */}
@@ -380,30 +380,20 @@ function Accueil() {
         </div>
       </section>
 
- {/* Section Ils nous ont fait confiance */}
-<section className="trust-section section-padding">
-  <div className="container">
-    <div className="row">
-      <div className="col-12 text-center">
-        <h2 className="mb-4">Ils nous ont fait confiance</h2>
-      </div>
-    </div>
+{/* Section Ils nous ont fait confiance */}
+<div className="sectiontitle">
+<h2 className="mb-4">Ils nous ont fait confiance</h2>
+</div>
 
-    <div className="row justify-content-center">
-      {[
-        logomendres, // Utilisez la variable importée
-        logowallyauto, // Utilisez la variable importée
-        logoEtef, // Utilisez la variable importée
-        ecopialogo, // Utilisez la variable importée
-        logoafricaforgood // Utilisez la variable importée
-      ].map((logo, index) => (
-        <div className="col-lg-2 col-md-4 col-6" key={index}>
-          <img src={logo} alt={`Logo ${index + 1}`} className="img-fluid" />
-        </div>
-      ))}
+<div className="logos-container">
+
+      <img src={logomendres} alt="Logo Mendres" className="logo" />
+      <img src={logowallyauto} alt="Logo Wally Auto" className="logo" />
+      <img src={logoEtef} alt="Logo ETEF" className="logo" />
+      <img src={ecopialogo} alt="Logo Ecopia" className="logo" />
+      <img src={logoafricaforgood} alt="Logo Africa For Good" className="logo" />
+  
     </div>
-  </div>
-</section>
 
 
      <section className="contact-section section-padding" id="section_4">
