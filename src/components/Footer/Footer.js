@@ -12,13 +12,13 @@ function Footer() {
             <p>Une plateforme pour les créatifs du monde entier.</p> */}
             {/* Icônes des réseaux sociaux */}
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/DesignEtef/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="icon" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="icon" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/design_etef/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="icon" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">

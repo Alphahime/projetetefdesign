@@ -450,7 +450,7 @@ function Accueil() {
                 <div>
                   <h5>Email</h5>
                   <p className="mb-0">
-                    <a href="mailto:etudieenfrance@gmail.com" className="text-decoration-none">etudieenfrance@gmail.com </a>
+                    <a href="design.pro@etef.fr" className="text-decoration-none">design.pro@etef.fr </a>
                   </p>
                 </div>
               </div>
